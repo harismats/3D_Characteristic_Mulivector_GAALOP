@@ -3,11 +3,11 @@
 ## Overview
 This repository benchmarks Geometric Algebra–based rotation estimation against standard SVD within both Absolute Orientation (AO) setting and an Iterative Closest Point (ICP) framework. We:
 
-1. Apply three Characteristic Multivector (CM) methods—  
+1. Apply three Characteristic Multivector (CM) methods —  
    - **Original CM** (Clifford Toolbox)  
    - **CM GAALOP** (symbolically optimized)  
    - **CM GAALOP CSE** (with common‐subexpression elimination)  
-   —to a sample point cloud (`apple.ply, horse.ply`) and compare runtime & accuracy against ground truth.
+   — to a sample point cloud (`apple.ply, horse.ply`) and compare runtime & accuracy against ground truth.
 
 2. Embed those four methods (plus **SVD**) in ICP loops over synthetic clouds of increasing size to compare performance and error scaling.
 
@@ -16,7 +16,7 @@ This repository benchmarks Geometric Algebra–based rotation estimation against
 - **MATLAB** R2020a or later  
 - **Clifford Multivector Toolbox** (add with `addpath`)  
 - **Computer Vision Toolbox** (for `pcread` & `pointCloud`)  
-- Sample point cloud: `apple.ply`
+- Sample point cloud: `apple.ply, horse.ply`
 
 ## Setup
 
@@ -65,7 +65,7 @@ This repository benchmarks Geometric Algebra–based rotation estimation against
 
 ## Core Concepts
 
-Although the Characteristic Multivector (CM) method in Geometric Algebra yields high accuracy, its direct MATLAB implementation is relatively slow. By exporting its symbolic rotor formulas through GAALOP—and further applying CSE we generate two optimized variants that:
+Although the Characteristic Multivector (CM) method yields high accuracy, its direct MATLAB implementation is relatively slow. By exporting its symbolic rotor formulas through GAALOP and further applying CSE we generate two optimized variants that:
 
 - Retain CM’s high accuracy  
 - Reduce computation time
