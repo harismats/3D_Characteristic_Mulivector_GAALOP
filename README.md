@@ -1,0 +1,1 @@
+# 3D_Characteristic_Mulivector_GAALOP
