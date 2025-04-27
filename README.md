@@ -48,7 +48,7 @@ This repository benchmarks Geometric Algebra–based rotation estimation against
 
 - **Purpose**: Measure runtime & Frobenius‐norm rotation error for SVD, CM, CM GAALOP, CM GAALOP CSE across cloud sizes.  
 - **Settings**:
-  - Cloud sizes: 1 000 : 500 : 8 000 points  
+  - Cloud sizes: 1000 : 500 : 8000 points  
   - 5 trials per size  
   - 100 ICP iterations each  
 - **Outputs**:  
