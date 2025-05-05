@@ -1,5 +1,3 @@
-%% Code for Paper
-
 clear; close all; clc;
 clifford_signature(3,0);
 
