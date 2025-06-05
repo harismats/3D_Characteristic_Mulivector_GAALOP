@@ -85,7 +85,7 @@ for k = 1:no_test_cases
 
     % --- Registration using GAALOP CSE---
     tic;
-    [R_CM_GAALOPCSE, ~] = CM_method_GAALOP(F_clifford_up, double(H2));
+    [R_CM_GAALOPCSE, ~] = CM_method_GAALOPCSE(F_clifford_up, double(H2));
     runtime_CM_GAALOPCSE(k) = toc;
 
     % --- Store the recovered rotations ---
